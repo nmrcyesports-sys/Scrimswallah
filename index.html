@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SW™ Tournament - 9PM Paid Scrims</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #121215; color: #e0e0e0; margin: 0; padding: 20px; }
+        .container { max-width: 500px; margin: 0 auto; background-color: #1a1a20; padding: 25px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); }
+        h1 { text-align: center; color: #ffffff; font-size: 1.5rem; margin-bottom: 25px; letter-spacing: 1px; }
+        .lobby-card { background-color: #24242c; padding: 15px 20px; margin-bottom: 20px; border-radius: 8px; border-left: 4px solid #5a67d8; }
+        .lobby-card h2 { font-size: 1.1rem; margin-top: 0; margin-bottom: 12px; color: #ffffff; display: flex; align-items: center; }
+        .lobby-card ul { list-style-type: none; padding: 0; margin: 0; font-size: 0.95rem; line-height: 1.6; }
+        .highlight { color: #ecc94b; font-weight: bold; margin-top: 8px; display: block; font-size: 0.9rem; }
+        .green-highlight { color: #48bb78; font-weight: bold; margin-top: 8px; display: block; font-size: 0.9rem; }
+        .booking-section { margin-top: 35px; padding-top: 25px; border-top: 2px dashed #333; }
+        .booking-section h2 { text-align: center; color: #5a67d8; margin-bottom: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 6px; font-size: 0.9rem; color: #a0aec0; }
+        input, select { width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #4a5568; background-color: #2d3748; color: white; box-sizing: border-box; font-size: 1rem; }
+        input:focus, select:focus { outline: none; border-color: #5a67d8; }
+        button { width: 100%; padding: 14px; background-color: #5a67d8; color: white; border: none; border-radius: 6px; font-size: 1.1rem; font-weight: bold; cursor: pointer; transition: background-color 0.2s; margin-top: 10px; }
+        button:hover { background-color: #434ce6; }
+        .support-contact { text-align: center; margin-top: 20px; font-size: 0.85rem; color: #718096; }
+        .support-contact a { color: #5a67d8; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>9PM PAID SCRIMS ✨</h1>
+
+        <div class="lobby-card">
+            <h2>📌 MINI LOBBIES</h2>
+            <ul>
+                <li>✪ <strong>ENTRY FEE:</strong> 16 | 20 | 30 INR</li>
+                <li>✪ <strong>PRIZEPOOL:</strong> 130 | 180 | 280 INR</li>
+                <li>✪ <strong>MATCHES:</strong> B2B 4</li>
+            </ul>
+        </div>
+
+        <div class="lobby-card">
+            <h2>📌 NORMAL MEGA LOBBIES</h2>
+            <ul>
+                <li>✪ <strong>ENTRY FEE:</strong> 25 | 35 | 40 INR</li>
+                <li>✪ <strong>PRIZEPOOL:</strong> 220 | 350 | 400 INR</li>
+                <li>✪ <strong>MATCHES:</strong> B2B 6</li>
+            </ul>
+            <span class="highlight">⚡ 10 X PRICE POOL IN 35 & 40 LOBBY</span>
+        </div>
+
+        <div class="lobby-card">
+            <h2>📌 T2 LOBBIES</h2>
+            <ul>
+                <li>✪ <strong>ENTRY FEE:</strong> 45 | 55 INR</li>
+                <li>✪ <strong>PRIZEPOOL:</strong> 430 | 550 INR</li>
+                <li>✪ <strong>MATCHES:</strong> B2B 6</li>
+            </ul>
+            <span class="green-highlight">👾 30₹ MVP PRICE IN 45 & 55 LOBBY</span>
+        </div>
+
+        <div class="booking-section">
+            <h2>Book Your Slot</h2>
+            <!-- Form automatically sends data to your email -->
+            <form id="bookingForm" action="https://formsubmit.co/luckyrajgupta1994@gmail.com" method="POST">
+                
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" id="nextUrl" value="">
+                <input type="hidden" name="Total_Entry_Fee" id="amountField" value="">
+
+                <div class="form-group">
+                    <label for="teamName">Full Team Lineup Name</label>
+                    <input type="text" name="Team_Name" id="teamName" placeholder="Enter your full team lineup" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lobbySelect">Select Lobby & Entry Fee</label>
+                    <select name="Selected_Lobby" id="lobbySelect" required>
+                        <option value="" disabled selected>Choose your lobby...</option>
+                        <optgroup label="Mini Lobbies (4 Matches)">
+                            <option value="mini-16">Mini Lobby - 16 INR</option>
+                            <option value="mini-20">Mini Lobby - 20 INR</option>
+                            <option value="mini-30">Mini Lobby - 30 INR</option>
+                        </optgroup>
+                        <optgroup label="Normal Mega Lobbies (6 Matches)">
+                            <option value="mega-25">Mega Lobby - 25 INR</option>
+                            <option value="mega-35">Mega Lobby - 35 INR (10X Prizepool)</option>
+                            <option value="mega-40">Mega Lobby - 40 INR (10X Prizepool)</option>
+                        </optgroup>
+                        <optgroup label="T2 Lobbies (6 Matches)">
+                            <option value="t2-45">T2 Lobby - 45 INR</option>
+                            <option value="t2-55">T2 Lobby - 55 INR</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactInfo">In-Game Name (IGN)</label>
+                    <input type="text" name="IGN" id="contactInfo" placeholder="e.g., PlayerOne#1234" required>
+                </div>
+
+                <button type="submit" id="submitBtn">Proceed to Paytm</button>
+            </form>
+            
+            <div class="support-contact">
+                Need help? Call Prince: <a href="tel:7666390285">76663-90285</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const UPI_ID = "6200871886@axl"; 
+        const UPI_NAME = "Lucky";
+        
+        const entryFees = {
+            "mini-16": 16, "mini-20": 20, "mini-30": 30,
+            "mega-25": 25, "mega-35": 35, "mega-40": 40,
+            "t2-45": 45,  "t2-55": 55
+        };
+
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            const lobbyId = document.getElementById('lobbySelect').value;
+            const amount = entryFees[lobbyId];
+
+            // Calculates the entry fee and attaches it to the email
+            document.getElementById('amountField').value = amount + " INR";
+
+            // Routes the player straight to the payment app
+            const paymentLink = `upi://pay?pa=${UPI_ID}&pn=${UPI_NAME}&am=${amount}&cu=INR`;
+            document.getElementById('nextUrl').value = paymentLink;
+            
+            document.getElementById('submitBtn').innerText = "Routing to Payment...";
+        });
+    </script>
+</body>
+</html>
+
